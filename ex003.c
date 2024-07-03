@@ -5,14 +5,14 @@ int main(void) {
   int peri;
   int area;  
   
-  printf("Digite um dos lados do quadrado: ");  
+  printf("Calculadora do quadrado\nDigite um dos lados do quadrado: ");  
   scanf("%d", &n1);
   
   peri = n1*4;  
   area = n1*n1;
   
-  printf("%d\n", peri);
-  printf("%d\n", area);
+  printf("Perimetro: %d\n", peri);
+  printf("Area: %d\n", area);
   
   return 0;
 }

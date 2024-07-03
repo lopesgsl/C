@@ -6,7 +6,7 @@ int main(){
 	int soma;
 	float medpod;
 	
-	printf("Digite 3 numeros: ");
+	printf("Vou te dar uma media ponderada\nDigite 3 numeros: ");
 	scanf("%i\n%i\n%i", &n1,&n2,&n3);
 	printf("Agora digite os seus respectivos pesos:");
 	scanf("%f\n%f\n%f", &p1,&p2,&p3);
@@ -18,6 +18,6 @@ int main(){
 	medpod = n1+n2+n3;
 	medpod = medpod/soma;
 	
-	printf("%.2f\n", medpod);
+	printf("Media ponderada: %.2f\n", medpod);
 	return 0;
 }

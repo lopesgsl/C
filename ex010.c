@@ -1,12 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <amp_math.h>
 
 int main(void){
-    int quilometro;
-    printf("Informe a distancia percorrida(em km): ");
-    scanf("%d", &quilometro);
-    int segundo;
-    printf("Informe o tempo gasto(em horas): ");
-    scanf("%d", &segundo);
-    int transforma = (quilometro / segundo) / 3.6;
-    printf("A velocidade informada eh o mesmo que %dm/s", transforma);
+	float cat1, cat2, hipo;
+	
+	printf("Voce conhece o Teorema de Pitagoras? Digite um cateto: ");
+	scanf("%f", &cat1);
+	printf("Agora digite outro cateto para eu lhe entregar uma hipotenusa: ");
+	scanf("%f", &cat2);
+
+	hipo = sqrt((cat1*cat1)+(cat2*cat2));
+	
+	printf("A hipotenusa e: %f", hipo);
+	return 0;
 }

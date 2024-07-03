@@ -13,11 +13,11 @@ int main(){
 	cubo = n1*n1*n1;
 	raiz = sqrt(n1);
 	
-	printf("%i\n", dobro);
-	printf("%i\n", triplo);
-	printf("%i\n", quadra);
-	printf("%i\n", cubo);
-	printf("%i\n", raiz);
+	printf("Dobro: %i\n", dobro);
+	printf("Triplo: %i\n", triplo);
+	printf("Ao Quadrado: %i\n", quadra);
+	printf("Ao Cubo: %i\n", cubo);
+	printf("Raiz Quadrada%i\n", raiz);
 		
 	return 0;
 }

@@ -10,7 +10,7 @@ int main(){
 	fari = celcius*1.8+32;
 	
 	printf(
-	"Agora vamos converter para as outras medidas\nkelvin: %.2f\nFahrenheit: %.2f", kelvin, fari
+	"\nAgora vamos converter para as outras medidas\nkelvin: %.2f\nFahrenheit: %.2f", kelvin, fari
 	);
 	
 	return 0;

@@ -5,12 +5,12 @@ int main(){
 	int soma;
 	float media;
 	
-	printf("Digite 3 numeros: ");
+	printf("Vou te dar a media de 3 numeros\nDigite 3 numeros: ");
 	scanf("%i\n%i\n%i", &n1, &n2, &n3);
 	
 	soma = n1+n2+n3;
 	media =soma/3;
 	
-	printf("%.2f\n", media/(int)3);
+	printf("Media: %.2f\n", media);
 	return 0;
 }
