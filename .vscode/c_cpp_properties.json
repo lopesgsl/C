@@ -4,15 +4,16 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**"
+
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "cl.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "compilerPath": "gcc.exe",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
             "intelliSenseMode": "windows-msvc-x64"
         }
     ],

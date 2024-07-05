@@ -9,7 +9,7 @@ int main(){
 	scanf("%f", &tempo);
 	
 	kmh = km/tempo;
-	ms = kmh*3.6;
+	ms = kmh/3.6;
 	
 	printf("Voce percorreu em metros por segundos um total de: %.2f M/s", ms);
 	return 0;
