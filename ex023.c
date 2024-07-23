@@ -10,7 +10,7 @@ int main(){
 	printf("Raio: ");
 	scanf("%f", &r);
 	
-	v = 4.0/3.0*PI*r*r*r;
+	v = (4.0/3.0)*PI*r*r*r;
 	
 	printf("\nO volume de uma esfera com o raio de %f e %f", r, v);
 	return 0;
