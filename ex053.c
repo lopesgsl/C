@@ -18,10 +18,10 @@ int main(){
     scanf("%i", &pena_mes);
 
     total = pena_ano*12+pena_mes;
-    ano_final = total/12+ano;
+    ano_final = (total+ano)/12;
     mes_final = (total+mes)%12;
 
-    printf("\nO detento deve ser liberado na data de %i/%i.", mes_final, ano_final);
+    printf("\nO detento deve ser liberado na data de %02i/%i.", mes_final, ano_final);
 
 
     return 0;
