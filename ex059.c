@@ -11,15 +11,15 @@ int main(){
     scanf("%i", &num2);
 
     if(num1>num2){
-        printf("O %i e maior que %i.", num1, num2);
+        printf("O %i e maior que %i.\n", num1, num2);
     }
     else if (num1 == num2)
     {
-        printf("Os dois numeros sao iguais.");
+        printf("Os dois numeros sao iguais.\n");
     }
     else
     {
-        printf("O %i e maior que %i.", num2, num1);
+        printf("O %i e maior que %i.\n", num2, num1);
     }
     
     return 0;
