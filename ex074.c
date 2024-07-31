@@ -3,7 +3,7 @@
 int main(){
     int num1, num2, num3, maior, menor, meio;
 
-    printf("\n//////// O maior numero ///////\n");
+    printf("\n//////// O menor numero ///////\n");
 
     printf("Digite um numero: ");
     scanf("%i", &num1);
@@ -33,7 +33,7 @@ int main(){
     
     meio = num1 + num2 + num3 - maior - menor;
     
-    printf("A ordem do maior ao menor e %i > %i > %i.\n", maior, meio,menor);
+    printf("O numero que n e nem o menor e maior e %i.\n", meio);
     
     return 0;
 }
