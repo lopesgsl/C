@@ -13,7 +13,7 @@ int main(){
     scanf("%i", &num2);
 
     printf("\nAgora o operador (+, -, *, /): ");
-    scanf("%s", &operado);
+    scanf("%s", operado);
 
     if (strcmp(operado, "+") == 0)
     {
