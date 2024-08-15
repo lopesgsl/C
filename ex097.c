@@ -22,17 +22,17 @@ int main(){
     //Entrada de Dados
     do
     {
-        printf("Digite as horas __:__ : ");
+        printf("Digite as horas (0 - 23) : ");
         scanf("%i", &hr);
     } while (hr < 0 || hr > 23);
     do
     {
-        printf("Digite os minutos %02i:__ : ", hr);
+        printf("Digite os minutos (0 - 59): %02i: ", hr);
         scanf("%i", &min);
     } while (min < 0 || hr > 59);
     do
     {
-        printf("Digite o quanto muda o fuso: ");
+        printf("Digite o quanto muda o fuso (-24 - 24): ");
         scanf("%i", &fh);
     } while (fh < -24 ||  fh > 24);
 
@@ -44,7 +44,7 @@ int main(){
         {
             hr -= 24;
         }
-        printf("O horario corrigido: %02i:%02i %ifuso.", hr, min, fh);
+        printf("\nO horario corrigido: %02i:%02i %ifuso.", hr, min, fh);
     }
     else if (fh < 0)
     {
@@ -52,12 +52,12 @@ int main(){
         if (hr < 0)
         {
             hr = 24+hr;
-            printf("O horario corrigido: %02i:%02i %ifuso.", hr, min, fh);
+            printf("\nO horario corrigido: %02i:%02i %ifuso.", hr, min, fh);
         }
     }
     else
     {
-        printf("O horario esta no fuso atual: %02i:%02i %ifuso.", hr, min, fh);
+        printf("\nO horario esta no fuso atual: %02i:%02i %ifuso.", hr, min, fh);
     }
     
     return 0;
