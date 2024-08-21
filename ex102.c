@@ -12,11 +12,11 @@ int main(){
     scanf("%i", &num);
 
     printf("Os divisores exatos de %i sao:", num);
-    for (int i = 0; i >= num; i++)
+    for (int i = 1; i <= num; i++)
     {
-        if (i%num == 0)
+        if (num % i == 0)
         {
-            printf("%i ", i);
+            printf(" %i", i);
         }
     }
     
