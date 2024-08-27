@@ -11,7 +11,7 @@ int main(){
 
     if (num == 1 || num == 2)
     {
-        printf("O %i termo da sequencia e o numero %i.", num, prox);
+        printf("\nO %i termo da sequencia e o numero %i.", num, prox);
     }
     else
     {
@@ -21,7 +21,7 @@ int main(){
             prox += ant;
             ant = ant2;
         }
-        printf("O %i termo da sequencia e o numero %i.", num, prox);
+        printf("\nO %i termo da sequencia e o numero %i.", num, prox);
     }
     
     return 0;
