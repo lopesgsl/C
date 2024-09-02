@@ -6,7 +6,7 @@ int main(){
 
     printf("\n        Sequencia de fibonacci\n\n");
 
-    printf("Quantos numeros deseja na sua sequencia?: ");
+    printf("Deseja saber qual termo da sequencia?: ");
     scanf("%i", &num);
 
     if (num == 1 || num == 2)
