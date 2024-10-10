@@ -5,7 +5,6 @@ número lido.*/
 int main(){
     int num[10], x, maior, seg_maior;
     int total = 1;
-
     printf("\n            O segundo maior numero.\n\n");
 
         printf("Digite um numero: ");
@@ -26,7 +25,6 @@ int main(){
                 break;
             }
         }
-
         if (distinto)//Verifica se e distinto
         {
             num[total] = x;
@@ -36,7 +34,6 @@ int main(){
             printf("\nEste numero ja foi digitado, tente novamente.\n\n");
             i--;
         }
-        
         //Confere se e o segundo maior numero
         if (num[i] > maior)
         {
@@ -48,8 +45,6 @@ int main(){
             seg_maior = num[i];
         }
     }
-    
     printf("O segundo maior numero e %d.\n", seg_maior);
-
     return 0;
 }
