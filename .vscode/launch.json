@@ -3,5 +3,32 @@
     // Focalizar para exibir as descrições dos atributos existentes.
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [        {
+        "name": "(gdb) Launch", // Nome da configuração de depuração
+        "type": "cppdbg",        // Tipo de depurador (C/C++)
+        "request": "launch",     // Tipo de ação (launch = iniciar, attach = anexar a um processo)
+        "program": "${workspaceFolder}/nome_do_programa", // Caminho para o executável do seu programa
+        "args": [],              // Argumentos para passar ao seu programa, se houver
+        "stopAtEntry": false,    // Se deseja parar na entrada do programa
+        "cwd": "${workspaceFolder}", // Diretório de trabalho atual
+        "environment": [],       // Variáveis de ambiente, se necessário
+        "externalConsole": false, // Usar ou não um console externo para a saída
+        "MIMode": "gdb",         // Usar o GDB como depurador
+        "setupCommands": [
+            {
+                "description": "Ativar impressão de valores automaticamente",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            }
+        ],
+        "preLaunchTask": "build", // Tarefa de pré-lançamento (geralmente a tarefa de build)
+        "miDebuggerPath": "/usr/bin/gdb", // Caminho para o gdb
+        "logging": {
+            "moduleLoad": false
+        },
+        "targetArchitecture": "x86_64", // Arquitetura do sistema (ajustar se necessário)
+        "launchCompleteCommand": "exec-run",
+        "filterStdout": true,
+        "filterStderr": false
+    }]
 }
