@@ -13,7 +13,7 @@ void main(){
     scanf("%d", &num);
     
     int lista[num];
-    for (int i = 0; i < num; i++)
+    for (int i = 0; soma <= num; i++)
     {
         printf("Digite um numero: ");
         scanf("%d", &lista[i]);
@@ -21,7 +21,7 @@ void main(){
         soma += lista[i];
 
         printf("\nA soma total dos numeros eh: %d\n", soma);
-        if (soma > num)
+        if (soma >= num)
         {
             break;
         }
