@@ -14,7 +14,5 @@ int main(){
         printf("%i ", num[t]);
     }
     
-	
-    
     return 0;
 }

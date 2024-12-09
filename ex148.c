@@ -9,7 +9,39 @@ números aleatórios. */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void main(){
-    int rand, 
+    int rando, menor = 1, maior = 100, user;
+
+    printf("\nVAMOS JOGA O JOGO DO 'ARROCHADO'?? TENTER N ADIVINHA O NUMERO.\n\n");
+
+    srand(time(NULL));
+
+    rando = (rand()%100)+1;
+
+    do
+    {
+        printf("Digite um numero entre %d - %d: ", menor, maior);
+        scanf("%d", &user);
+        
+        if (user < rando)
+        {
+            menor = user;
+        }
+        else if (user > rando)
+        {
+            maior = user;
+        }
+        
+    } while (user != rando && maior - menor > 2);
+    
+    if (user == rando)
+    {
+        printf("Voce ganhou.");
+    }
+    else{
+        printf("Voce perdeu.");
+    }
+    
 }
