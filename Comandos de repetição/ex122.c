@@ -15,7 +15,6 @@ int main(){
         ant2 = prox;
         prox += ant;
         ant = ant2;
-
         if (ant == n)
         {
             printf("\nO numero %d esta sim na sequencia de Fibonacci.", ant);
@@ -27,7 +26,6 @@ int main(){
             break;
         }
     }
-    
 
     return 0;
 }

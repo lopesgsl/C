@@ -18,7 +18,7 @@ void main(){
     int linhas = tam;
     for (int i = 0; i < linhas; i++)
     {
-        for (int  i = 4; i < tam; i++)
+        for (int  k = tam-1; k < tam; k++)
         {
             printf("*");
         }

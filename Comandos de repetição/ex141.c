@@ -12,7 +12,8 @@ int main(){
     printf("Digite outro numero: ");
     scanf("%d", &num3);
 
-    for(int i = 2;num1 > 1 || num2 > 1 || num3 > 1;)
+    int i = 2;
+    while(num1 > 1 || num2 > 1 || num3 > 1)
     {
         //condição para verifica se realmente aconteceu uma divisão
         if (num3 % i == 0 || num2 % i == 0 || num1 % i == 0)
